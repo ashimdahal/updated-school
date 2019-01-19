@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2019 at 07:24 AM
+-- Generation Time: Jan 19, 2019 at 08:01 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -21,6 +21,131 @@ SET time_zone = "+00:00";
 --
 -- Database: `school`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `absent_present`
+--
+
+CREATE TABLE `absent_present` (
+  `id` int(11) NOT NULL,
+  `Class_Teacher` text NOT NULL,
+  `Class` text NOT NULL,
+  `Section` text NOT NULL,
+  `year` text NOT NULL,
+  `month` text NOT NULL,
+  `Day` text NOT NULL,
+  `total_absent` text NOT NULL,
+  `names_of_std` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `absent_present`
+--
+
+INSERT INTO `absent_present` (`id`, `Class_Teacher`, `Class`, `Section`, `year`, `month`, `Day`, `total_absent`, `names_of_std`) VALUES
+(2, 'Kdewanik@gmail.com', '10th Grade', 'B', '2075', 'Kartik', '27', '2', 'New_std,Dewanik,'),
+(4, 'kkl@gmail.com', '1', 'A', '2075', 'Kartik', '28', '0', ''),
+(5, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(6, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(7, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(8, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(9, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(10, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(11, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(12, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(13, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(14, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(15, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(16, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(17, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(18, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(19, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(20, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(21, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(22, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '0', ''),
+(23, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(24, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(25, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(26, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(27, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(28, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(29, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(30, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(31, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '28', '1', 'class,'),
+(32, 'kkl@gmail.com', '1', 'A', '2075', 'Kartik', '29', '0', ''),
+(33, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '29', '1', 'class,'),
+(34, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '29', '1', 'class,'),
+(35, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '29', '1', 'class,'),
+(36, 'kklm@gmail.com', '1th Grade', 'A', '2075', 'Kartik', '29', '1', 'class,'),
+(37, 'klp@gmail.com', 'Grade 5', 'A', '2075', 'Kartik', '30', '1', 'fivekostd,'),
+(38, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(39, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(40, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(41, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(42, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(43, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(44, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(45, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(46, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(47, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(48, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(49, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '1', '1', 'class,'),
+(50, 'kkl@gmail.com', 'Grade 10', 'C', '2075', 'Mangsir', '2', '1', 'Ashim,'),
+(51, 'kkl@gmail.com', 'Grade 10', 'C', '2075', 'Mangsir', '2', '1', 'Ashim,'),
+(52, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '2', '1', 'class,'),
+(53, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '2', '1', 'class,'),
+(54, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '2', '1', 'class,'),
+(55, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '3', '1', 'class,'),
+(56, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '3', '1', 'class,'),
+(57, 'kklm@gmail.com', 'Grade 1', 'A', '2075', 'Mangsir', '3', '1', 'class,'),
+(58, 'kkl@gmail.com', 'Grade 10', 'C', '2075', 'Poush', '30', '1', 'Ashim,'),
+(59, 'kkl@gmail.com', 'Grade 10', 'C', '2075', 'Poush', '30', '1', 'Ashim,');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comming_events`
+--
+
+CREATE TABLE `comming_events` (
+  `eventid` int(11) NOT NULL,
+  `eventname` varchar(256) NOT NULL,
+  `organizer` varchar(256) NOT NULL,
+  `type` varchar(256) NOT NULL,
+  `eventday` varchar(256) NOT NULL,
+  `noticeby` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `comming_events`
+--
+
+INSERT INTO `comming_events` (`eventid`, `eventname`, `organizer`, `type`, `eventday`, `noticeby`) VALUES
+(4, 'science exhibition', 'Balmiki', 'Competition', '2018-11-19', 'principal');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `orderid` int(11) NOT NULL,
+  `imageevent` text NOT NULL,
+  `imagedesc` text NOT NULL,
+  `uploader` text NOT NULL,
+  `imagename` text NOT NULL,
+  `imageid` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `images`
+--
+
+INSERT INTO `images` (`orderid`, `imageevent`, `imagedesc`, `uploader`, `imagename`, `imageid`) VALUES
+(1, 'inspiration', 'for coders', 'principal', 'image.5bed6367eafd88.83559237.png', '');
 
 -- --------------------------------------------------------
 
@@ -108,9 +233,52 @@ INSERT INTO `teachers.detail` (`ID`, `firstname`, `lastname`, `phone.number`, `u
 (10, 'sahhaab', 'sir', 1234567890, '45l', '$2y$10$LPyxvZHma5OrnfOflPUgEeaEyLnKW3nqCsCx7SCvTN38ziyxIsZVm', 'Grade 1', 'kklm@gmail.com', 'A'),
 (11, 'test', 'sir', 1234567890, 'klp', '$2y$10$kvlj5H5YF7pjECFw9QHt5.ggQM/5u6JnHfuy./N/Q1RUJW896evry', 'Grade 5', 'klp@gmail.com', 'A');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `videolect`
+--
+
+CREATE TABLE `videolect` (
+  `videoid` int(11) NOT NULL,
+  `videofullname` text NOT NULL,
+  `description` text NOT NULL,
+  `uploadedby` text NOT NULL,
+  `recommended` text NOT NULL,
+  `videotitle` text NOT NULL,
+  `ordervideo` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `videolect`
+--
+
+INSERT INTO `videolect` (`videoid`, `videofullname`, `description`, `uploadedby`, `recommended`, `videotitle`, `ordervideo`) VALUES
+(1, 'lesson.5bf0b3ed80bd05.41933190.mp4', 'test', 'principal', 'Grade 10', 'test', '1'),
+(2, 'lesson.5bf0b42c5a4ed0.98747650.mp4', 'test', 'principal', 'Grade 9', 'tutorials', '1'),
+(3, 'lesson.5bf252d180f519.50400445.mp4', 'test', 'principal', 'Nursery', 'part 1', '1');
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `absent_present`
+--
+ALTER TABLE `absent_present`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `comming_events`
+--
+ALTER TABLE `comming_events`
+  ADD PRIMARY KEY (`eventid`);
+
+--
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`orderid`);
 
 --
 -- Indexes for table `notices`
@@ -131,8 +299,26 @@ ALTER TABLE `teachers.detail`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `videolect`
+--
+ALTER TABLE `videolect`
+  ADD PRIMARY KEY (`videoid`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `absent_present`
+--
+ALTER TABLE `absent_present`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+
+--
+-- AUTO_INCREMENT for table `comming_events`
+--
+ALTER TABLE `comming_events`
+  MODIFY `eventid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `notices`
@@ -151,6 +337,12 @@ ALTER TABLE `std.parent`
 --
 ALTER TABLE `teachers.detail`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `videolect`
+--
+ALTER TABLE `videolect`
+  MODIFY `videoid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
