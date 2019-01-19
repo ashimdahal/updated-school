@@ -1,0 +1,18 @@
+label{
+  height: 20px;
+width: 20px;
+border-radius: 100%;
+box-shadow:0px 0px 3px 0px;
+cursor:pointer;
+position: relative;
+top: 15px;
+margin-left: -25px !important;
+display: block;
+}
+input[type='checkbox']:checked + label{
+  background: #0267e8e0;
+box-shadow: 0px 0px 0px 4px red;
+}
+html{
+  background: red;
+}
